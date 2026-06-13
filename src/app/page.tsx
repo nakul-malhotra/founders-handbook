@@ -9,111 +9,100 @@ export default function Home() {
 
   return (
     <>
-      {/* ---------- Cover ---------- */}
-      <section className="shell" style={{ paddingTop: "clamp(3rem, 8vw, 6rem)" }}>
-        <div className="cover-grid">
-          <div className="rise">
-            <p className="eyebrow eyebrow--accent">
-              {site.name} · {site.volume}
-            </p>
-            <h1
-              className="display"
-              style={{
-                fontSize: "clamp(3rem, 9vw, 6.5rem)",
-                margin: "1.25rem 0 0",
-              }}
-            >
-              Raising
-              <br />
-              <em style={{ fontStyle: "italic", fontWeight: 300 }}>Venture</em>{" "}
-              Capital
-            </h1>
-            <p className="lede" style={{ marginTop: "1.75rem", maxWidth: "40ch" }}>
-              A reading-first field guide to the pre-seed and seed raise —
-              assembled from the people who fund and the people who have raised,
-              with every claim traced back to its source.
-            </p>
-            <div
-              style={{
-                display: "flex",
-                gap: "0.9rem",
-                marginTop: "2.25rem",
-                flexWrap: "wrap",
-              }}
-            >
-              <Link href="/guide" className="btn btn--accent">
-                Read the guide <span className="arr">→</span>
-              </Link>
-              <Link href="/sources" className="btn">
-                The sources
-              </Link>
+      {/* ---------- Cover: drawing title block ---------- */}
+      <section className="shell" style={{ paddingTop: "clamp(1.75rem, 5vw, 3.5rem)" }}>
+        <div className="titleblock rise">
+          <span className="cm cm--tl" aria-hidden />
+          <span className="cm cm--tr" aria-hidden />
+          <span className="cm cm--bl" aria-hidden />
+          <span className="cm cm--br" aria-hidden />
+
+          <div className="titleblock__rail">
+            <span>
+              <b>{site.name}</b> · Field manual
+            </span>
+            <span>{site.volume} · Cited to source</span>
+          </div>
+
+          <div className="titleblock__body cover-grid">
+            <div>
+              <p className="eyebrow eyebrow--accent tick">Subject 01 — Fundraising</p>
+              <h1
+                className="display"
+                style={{ fontSize: "clamp(2.7rem, 8vw, 5.6rem)", margin: "1.1rem 0 0" }}
+              >
+                Raising Venture Capital
+              </h1>
+              <p className="lede" style={{ marginTop: "1.5rem", maxWidth: "42ch" }}>
+                A reading-first field guide to the pre-seed and seed raise —
+                assembled from the people who fund and the people who have
+                raised, with every claim traced back to its source.
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "0.9rem",
+                  marginTop: "2rem",
+                  flexWrap: "wrap",
+                }}
+              >
+                <Link href="/guide" className="btn btn--accent">
+                  Read the guide <span className="arr">→</span>
+                </Link>
+                <Link href="/sources" className="btn">
+                  The sources
+                </Link>
+              </div>
+            </div>
+
+            <div className="cover-index">
+              <div className="cover-index__row">
+                <span className="cover-index__k">Catalogued sources</span>
+                <span className="cover-index__v">{sourceCount}</span>
+              </div>
+              <div className="cover-index__row">
+                <span className="cover-index__k">Chapters in volume</span>
+                <span className="cover-index__v">{chapters.length}</span>
+              </div>
+              <div className="cover-index__row">
+                <span className="cover-index__k">Uncited claims</span>
+                <span className="cover-index__v">
+                  <span className="ac">0</span>
+                </span>
+              </div>
+              <p className="cover-index__note">
+                Primary essays, accelerator libraries, fund writing, and an
+                operator&rsquo;s playbook — each linked to the original.
+              </p>
             </div>
           </div>
 
-          <div
-            className="rise"
-            style={{ animationDelay: "0.12s", paddingBottom: "0.4rem" }}
-          >
-            <hr className="rule rule--strong" />
-            <dl style={{ margin: 0 }}>
-              {[
-                {
-                  k: "Catalogued sources",
-                  v: String(sourceCount),
-                  cite: null,
-                },
-                {
-                  k: "Chapters in this volume",
-                  v: String(chapters.length),
-                  cite: null,
-                },
-              ].map((row) => (
-                <div
-                  key={row.k}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "baseline",
-                    padding: "0.85rem 0",
-                    borderBottom: "1px solid var(--rule)",
-                  }}
-                >
-                  <dt
-                    className="mono"
-                    style={{
-                      fontSize: "0.7rem",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                      color: "var(--muted)",
-                    }}
-                  >
-                    {row.k}
-                  </dt>
-                  <dd className="serif" style={{ margin: 0, fontSize: "1.5rem" }}>
-                    {row.v}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <p
-              className="mono"
-              style={{
-                fontSize: "0.7rem",
-                lineHeight: 1.6,
-                color: "var(--muted)",
-                marginTop: "1rem",
-              }}
-            >
-              Primary essays, accelerator libraries, fund writing, and an
-              operator&rsquo;s playbook — each linked to the original.
-            </p>
+          <div className="titleblock__fields">
+            <div className="field">
+              <p className="field__k">Sheet</p>
+              <p className="field__v">
+                01 <span style={{ color: "var(--faint)" }}>/ 04</span>
+              </p>
+            </div>
+            <div className="field">
+              <p className="field__k">Subject</p>
+              <p className="field__v">Pre-seed &amp; Seed</p>
+            </div>
+            <div className="field">
+              <p className="field__k">Standard</p>
+              <p className="field__v">Primary sources</p>
+            </div>
+            <div className="field">
+              <p className="field__k">Revision</p>
+              <p className="field__v">2025.1</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ---------- Cited fast facts ---------- */}
       <section className="shell" style={{ marginTop: "clamp(3.5rem, 8vw, 6rem)" }}>
-        <hr className="rule rule--double" />
+        <hr className="rule--dim" />
         <div className="stat-row" style={{ padding: "2.5rem 0" }}>
           <Stat
             n={<>~$700K</>}
@@ -161,7 +150,7 @@ export default function Home() {
             }
           />
         </div>
-        <hr className="rule rule--double" />
+        <hr className="rule--dim" />
       </section>
 
       {/* ---------- Contents of this volume ---------- */}

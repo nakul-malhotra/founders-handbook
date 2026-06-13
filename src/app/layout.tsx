@@ -1,34 +1,34 @@
 import type { Metadata } from "next";
-import { Fraunces, Newsreader, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Spectral, Spline_Sans_Mono } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { site } from "@/data/site";
 
-const fraunces = Fraunces({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  style: ["normal", "italic"],
   axes: ["opsz"],
   display: "swap",
-  variable: "--font-fraunces",
+  variable: "--font-bricolage",
 });
 
-const newsreader = Newsreader({
+const spectral = Spectral({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
-  axes: ["opsz"],
   display: "swap",
-  variable: "--font-news",
+  variable: "--font-spectral",
 });
 
-const jetbrains = JetBrains_Mono({
+const splineMono = Spline_Sans_Mono({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-mono-jb",
+  variable: "--font-spline-mono",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://groundwork.vercel.app"),
+  metadataBase: new URL("https://founders-handbook.vercel.app"),
   title: {
     default: `${site.name} — ${site.volumeTitle}`,
     template: `%s — ${site.name}`,
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${newsreader.variable} ${jetbrains.variable}`}
+      className={`${bricolage.variable} ${spectral.variable} ${splineMono.variable}`}
     >
       <body>
         <SiteHeader />

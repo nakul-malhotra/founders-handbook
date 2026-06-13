@@ -16,7 +16,9 @@ function Head({ id }: { id: string }) {
   const c = chapters[i];
   return (
     <header style={{ marginBottom: "1.75rem" }}>
-      <p className="chapter__no">Chapter {String(i + 1).padStart(2, "0")}</p>
+      <p className="chapter__no">
+        Chapter {String(i + 1).padStart(2, "0")} / {chapters.length}
+      </p>
       <h2 className="chapter__title">{c.title}</h2>
     </header>
   );

@@ -1,4 +1,4 @@
-# Groundwork
+# Founders' Handbook
 
 A reading-first, fully-cited reference for founders. Volume I covers raising
 venture capital at the pre-seed and seed stage.
@@ -24,8 +24,8 @@ compile time, not by hand.
 
 ## Stack
 
-Next.js (App Router) · React · TypeScript · Tailwind. Type set in Fraunces,
-Newsreader, and JetBrains Mono.
+Next.js (App Router) · React · TypeScript · Tailwind. Type set in Bricolage
+Grotesque, Spectral, and Spline Sans Mono.
 
 ## Develop
 

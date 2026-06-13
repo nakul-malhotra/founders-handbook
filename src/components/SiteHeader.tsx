@@ -7,7 +7,7 @@ export default function SiteHeader() {
       <div className="shell masthead__row">
         <Link href="/" className="wordmark" aria-label={`${site.name} — home`}>
           <b>{site.name}</b>
-          <span className="wordmark__no">№ I</span>
+          <span className="wordmark__no">FM&nbsp;I</span>
         </Link>
         <nav className="nav" aria-label="Primary">
           {site.nav.map((item) => (
