@@ -64,8 +64,7 @@ export default function MethodPage() {
           another. Only the points that resolved to a named, citable source were
           carried into the guide; everything that depended on private or
           unpublished material was left out. The result is a reading that you can
-          audit: every marker opens the exact work it rests on, so the guide can
-          be checked against the originals rather than taken on faith.
+          audit: every marker opens the exact work it rests on.
         </p>
       </div>
 
@@ -93,8 +92,8 @@ export default function MethodPage() {
           This is a reading-first synthesis of published guidance on
           raising venture capital. It is not legal, tax, or financial advice, and
           the figures cited reflect their sources at the time of publication.
-          Treat it as a map drawn from the territory others have walked — useful,
-          cited, and always worth checking against the originals.
+          Treat it as a map drawn from the territory others have walked — always
+          worth checking against the originals.
         </p>
       </div>
 

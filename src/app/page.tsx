@@ -320,7 +320,7 @@ export default function Home() {
               <p style={{ color: "var(--ink-2)", maxWidth: "46ch" }}>
                 Claims carry a superscript that opens the exact reference. All{" "}
                 {sourceCount} catalogued works are linked in full, so you can
-                check the original whenever you want to.
+                check the original yourself.
               </p>
               <div style={{ display: "flex", gap: "1.5rem", marginTop: "1.25rem", flexWrap: "wrap" }}>
                 <Link href="/sources" className="link-arrow">

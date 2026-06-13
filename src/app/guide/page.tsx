@@ -142,7 +142,7 @@ export default function GuidePage() {
                 out.<Cite id="pg-convince" />
               </p>
               <p>
-                That reframes the founder&rsquo;s job. The way to convince
+                The way to convince
                 investors is less about persuasion technique and more about
                 actually being formidable, then making a few things clear and
                 believable rather than dressing them up.<Cite id="pg-convince" />{" "}
@@ -336,9 +336,7 @@ export default function GuidePage() {
                 Seed-deck guidance converges on the same pattern: early decks
                 become compelling when they show hard evidence — paying users,
                 revenue, a growth rate, named customers, letters of intent, or
-                strong customer quotes.<Cite id={["yc-seed-deck", "visible-seed-deck"]} /> A
-                chart of what <em>might</em> happen persuades no one; a small
-                number that already happened changes the conversation.
+                strong customer quotes.<Cite id={["yc-seed-deck", "visible-seed-deck"]} />
               </p>
               <p>
                 That evidence rarely arrives on its own. Graham&rsquo;s
@@ -543,10 +541,9 @@ export default function GuidePage() {
             <div className="prose">
               <p>
                 The partner meeting is where a maybe becomes a term sheet or a
-                pass. First Round&rsquo;s account of what to really expect is worth
-                internalizing: you are presenting to a room with its own dynamics,
-                and the questions are testing conviction as much as
-                content.<Cite id="fr-partner-meeting" />
+                pass. First Round&rsquo;s account: you are presenting to
+                a room with its own dynamics, and the questions test conviction as
+                much as content.<Cite id="fr-partner-meeting" />
               </p>
               <p>
                 Flux describes the same room from the operator&rsquo;s side as live
@@ -618,9 +615,9 @@ export default function GuidePage() {
                 good, clean offer.<Cite id="yc-seed-guide" />
               </p>
               <p>
-                And remember what the leverage is <em>for</em>. Fundraising is a
-                means, not an end; the win condition is closing the right money
-                quickly and getting back to building.<Cite id="pg-fr" />
+                Leverage is a means, not an end. Fundraising&rsquo;s win condition
+                is closing the right money quickly and getting back to
+                building.<Cite id="pg-fr" />
               </p>
               <ChapterSources ids={["flux-terms", "pg-fr", "yc-seed-guide"]} />
             </div>
@@ -666,7 +663,7 @@ export default function GuidePage() {
                 governs the whole process.<Cite id="pg-fr" />
               </p>
               <p>
-                Speed protects you here. YC&rsquo;s advice is unambiguous: once an
+                Speed protects you here. Once an
                 investor says yes, use standard documents and close
                 quickly — momentum decays, and an unsigned commitment can evaporate
                 in a single bad week.<Cite id="yc-seed-guide" /> Close committed
