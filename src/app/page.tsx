@@ -24,56 +24,33 @@ export default function Home() {
             <span>{site.volume} · Cited to source</span>
           </div>
 
-          <div className="titleblock__body cover-grid">
-            <div>
-              <p className="eyebrow eyebrow--accent tick">Subject 01 — Fundraising</p>
-              <h1
-                className="display"
-                style={{ fontSize: "clamp(2.7rem, 8vw, 5.6rem)", margin: "1.1rem 0 0" }}
-              >
-                Raising Venture Capital
-              </h1>
-              <p className="lede" style={{ marginTop: "1.5rem", maxWidth: "42ch" }}>
-                A reading-first field guide to the pre-seed and seed raise —
-                assembled from the people who fund and the people who have
-                raised, with every claim traced back to its source.
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "0.9rem",
-                  marginTop: "2rem",
-                  flexWrap: "wrap",
-                }}
-              >
-                <Link href="/guide" className="btn btn--accent">
-                  Read the guide <span className="arr">→</span>
-                </Link>
-                <Link href="/sources" className="btn">
-                  The sources
-                </Link>
-              </div>
-            </div>
-
-            <div className="cover-index">
-              <div className="cover-index__row">
-                <span className="cover-index__k">Catalogued sources</span>
-                <span className="cover-index__v">{sourceCount}</span>
-              </div>
-              <div className="cover-index__row">
-                <span className="cover-index__k">Chapters in volume</span>
-                <span className="cover-index__v">{chapters.length}</span>
-              </div>
-              <div className="cover-index__row">
-                <span className="cover-index__k">Uncited claims</span>
-                <span className="cover-index__v">
-                  <span className="ac">0</span>
-                </span>
-              </div>
-              <p className="cover-index__note">
-                Primary essays, accelerator libraries, fund writing, and an
-                operator&rsquo;s playbook — each linked to the original.
-              </p>
+          <div className="titleblock__body">
+            <p className="eyebrow eyebrow--accent tick">Subject 01 — Fundraising</p>
+            <h1
+              className="display"
+              style={{ fontSize: "clamp(2.7rem, 8vw, 5.6rem)", margin: "1.1rem 0 0" }}
+            >
+              Raising Venture Capital
+            </h1>
+            <p className="lede" style={{ marginTop: "1.5rem", maxWidth: "44ch" }}>
+              A reading-first field guide to the pre-seed and seed raise —
+              assembled from the people who fund and the people who have
+              raised, with every claim traced back to its source.
+            </p>
+            <div
+              style={{
+                display: "flex",
+                gap: "0.9rem",
+                marginTop: "2rem",
+                flexWrap: "wrap",
+              }}
+            >
+              <Link href="/guide" className="btn btn--accent">
+                Read the guide <span className="arr">→</span>
+              </Link>
+              <Link href="/sources" className="btn">
+                The sources
+              </Link>
             </div>
           </div>
 
