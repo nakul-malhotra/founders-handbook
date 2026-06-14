@@ -18,10 +18,8 @@ export default function Home() {
           <span className="cm cm--br" aria-hidden />
 
           <div className="titleblock__rail">
-            <span>
-              <b>{site.name}</b> · Field manual
-            </span>
-            <span>{site.volume} · Cited to source</span>
+            <span>{site.volume}</span>
+            <span>Cited to source</span>
           </div>
 
           <div className="titleblock__body">
@@ -51,27 +49,6 @@ export default function Home() {
               <Link href="/sources" className="btn">
                 The sources
               </Link>
-            </div>
-          </div>
-
-          <div className="titleblock__fields">
-            <div className="field">
-              <p className="field__k">Sheet</p>
-              <p className="field__v">
-                01 <span style={{ color: "var(--faint)" }}>/ 04</span>
-              </p>
-            </div>
-            <div className="field">
-              <p className="field__k">Subject</p>
-              <p className="field__v">Pre-seed &amp; Seed</p>
-            </div>
-            <div className="field">
-              <p className="field__k">Standard</p>
-              <p className="field__v">Primary sources</p>
-            </div>
-            <div className="field">
-              <p className="field__k">Revision</p>
-              <p className="field__v">2025.1</p>
             </div>
           </div>
         </div>

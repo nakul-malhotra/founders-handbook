@@ -1052,49 +1052,8 @@ h4 {
   text-transform: uppercase;
   color: var(--muted);
 }
-.titleblock__rail b {
-  color: var(--ink);
-  font-weight: 600;
-}
 .titleblock__body {
   padding: clamp(1.75rem, 4.5vw, 3.5rem) clamp(1.1rem, 3vw, 2.4rem);
-}
-.titleblock__fields {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid var(--rule-2);
-}
-@media (min-width: 720px) {
-  .titleblock__fields {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-.field {
-  padding: 0.85rem clamp(1.1rem, 3vw, 1.4rem);
-  border-right: 1px solid var(--rule);
-}
-.field:last-child {
-  border-right: 0;
-}
-.field__k {
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.field__v {
-  margin-top: 0.3rem;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.02rem;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  font-variant-numeric: tabular-nums;
-}
-.field__v .ac {
-  color: var(--accent);
 }
 
 .stat-row {
@@ -1234,9 +1193,6 @@ h4 {
   .titleblock__rail {
     font-size: 0.6rem;
     letter-spacing: 0.1em;
-  }
-  .titleblock__rail > span:last-child {
-    display: none;
   }
 }
 
